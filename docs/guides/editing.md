@@ -102,7 +102,7 @@ If a note's file is moved or deleted outside Hibi, its tab keeps the text. Savin
 
 ## Optional writing tools
 
-Enable **Editor width** in **Settings → Addon Manager** to add a slider to the status bar at the bottom of the editor. Drag it to adjust the width from 30% to 100% of each editing pane, or focus it and use the arrow keys, Home, or End. Changes apply immediately in Normal, Source, and side-by-side views. Hibi remembers the width on this device for all documents; disabling the addon restores full width.
+Enable **Editor width** in **Settings → Addon Manager** to add a slider to the status bar at the bottom of the editor. Drag it to adjust the width from 320 to 1600 pixels, or focus it and use the arrow keys, Home, or End. The default is 800 pixels. Resizing a sidebar keeps your chosen width; the editor only becomes narrower when the available pane cannot fit it. Changes apply immediately in Normal, Source, and side-by-side views. Hibi remembers the width on this device for all documents; disabling the addon restores full width.
 
 Enable **Mermaid** to edit `.mmd` diagrams and render Mermaid code blocks in Markdown. **BBCode** adds `.bbcode` and `.bbc` files with a preview and formatting toolbar. Both addons offer HTML export from side-by-side view.
 
