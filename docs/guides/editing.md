@@ -102,7 +102,9 @@ If a note's file is moved or deleted outside Hibi, its tab keeps the text. Savin
 
 ## Optional writing tools
 
-Enable **Editor width** in **Settings → Addon Manager** to add a slider to the status bar at the bottom of the editor. Drag it to adjust the width from 320 to 1600 pixels, or focus it and use the arrow keys, Home, or End. The default is 800 pixels. Resizing a sidebar keeps your chosen width; the editor only becomes narrower when the available pane cannot fit it. Changes apply immediately in Normal, Source, and side-by-side views. Hibi remembers the width on this device for all documents; disabling the addon restores full width.
+Enable **Editor width** in **Settings → Addon Manager** to add a slider and **Width cap** toggle to the status bar at the bottom of the editor. Drag the slider to adjust the width, or focus it and use the arrow keys, Home, or End. Turn off **Width cap** for full width, then turn it back on to restore your chosen width. Changes apply immediately in Normal, Source, and side-by-side views.
+
+The default is 800 pixels, with slider limits of 320 and 1600 pixels. Open **Editor width** in Settings to change **Minimum width**, **Maximum width**, and **Width unit**. Any supported CSS length unit works, including `px`, `rem`, `ch`, `vw`, and `%`. The same unit applies to both limits and the chosen width. Leave a field or press Enter to save; the width stays within the new limits. Pixel widths stay fixed when resizing a sidebar unless the pane cannot fit them. Relative units follow CSS sizing, so `%` follows the pane and `vw` follows the window. Hibi remembers these choices on this device for all documents; disabling the addon restores full width.
 
 Enable **Mermaid** to edit `.mmd` diagrams and render Mermaid code blocks in Markdown. **BBCode** adds `.bbcode` and `.bbc` files with a preview and formatting toolbar. Both addons offer HTML export from side-by-side view.
 
