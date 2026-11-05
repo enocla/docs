@@ -36,7 +36,7 @@ If a source language fails to load, choose **Retry language** in its notice. Ret
 
 ## Equations in Markdown
 
-With the LaTeX addon enabled, use `$x$` for inline math. As in Obsidian, the expression can't start with a space or tab, and the first `$` after it closes it unless a space or tab comes before that `$` or a digit after it, so `$5 and $10` stays text. It can continue on later lines of its paragraph. See [Equations in Markdown](https://github.com/schmayterling/hibi/blob/main/src/addons/math/README.md#equations-in-markdown) for display math and literal dollar signs.
+With the LaTeX addon enabled, use `$x$` for inline math. As in Obsidian, the expression can't start with a space or tab, and the next `$` closes it, skipping any `$` with a space or tab before it or a digit after it: `$a $b$` is the formula `a $b`, and `$5 and $10` stays text. It can continue on later lines of its paragraph. A display block starts at a `$$` line and, as in Obsidian, ends at the first line that ends in `$$` with no other dollar sign; without one, it runs to the end of its quote, list item, or note. See [Equations in Markdown](https://github.com/schmayterling/hibi/blob/main/src/addons/math/README.md#equations-in-markdown) for display math and literal dollar signs.
 
 As in Obsidian, `$$x$$` inside a line of a heading, paragraph, or table cell is display math. The next `$$` closes it, even on a later line of the same paragraph, and the expression can contain single dollar signs or be blank. Normal view, the page outline, and HTML and PDF exports draw it as a formula, and word counts leave it out. As in Obsidian, `\$$x$$` reads as a dollar sign, inline math `x`, and another dollar sign; write `\$\$x\$\$` to keep all the dollar signs as text.
 
